@@ -1,0 +1,64 @@
+.main_left_profile {
+  width: 100%;
+  height: 8vh;
+  margin: 1vh 0;
+  display: flex;
+  background-color: var(--color-bgwhite);
+  border-radius: 10px;
+}
+
+.main_left_profile_nameandat {
+  display: flex;
+  flex-direction: column;
+  height: 8vh;
+  margin: 2vh 1vh;
+  text-align: left;
+}
+.main_left_profile_nameandat_name {
+  height: 2vh;
+  font-size: 2vh;
+  font-weight: 900;
+  color: var(--black);
+}
+
+.main_left_profile_nameandat_at {
+  height: 2vh;
+  font-size: 1vh;
+  line-height: 2vh;
+  font-weight: 200;
+  color: var(--black);
+}
+
+.main_left_menucontainer {
+  width: 100%;
+  height: 64vh;
+  margin: 1vh 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-bgwhite);
+  border-radius: 10px;
+}
+
+.main_left_menu {
+  width: 100%;
+  height: 8vh;
+  font-size: 2vh;
+  line-height: 8vh;
+  text-align: left;
+  margin-left: 4vw;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main_left_menu:hover {
+  color: var(--color-gray);
+}
+
+.main_left_menu i {
+  position: absolute;
+  height: 100%;
+  left: 1.5vw;
+  font-size: 3vh;
+  line-height: 8vh;
+}

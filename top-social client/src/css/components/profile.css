@@ -1,0 +1,56 @@
+.navbar_profileImage,
+.main_left_profile_profileImage,
+.main_middle_highline_profileimage,
+.main_middle_post_profileimage,
+.main_middle_card_profileImage,
+.main_right_message_profileImage,
+.main_right_requests_profileImage,
+.main_middle_card_cardLikeProfileImage {
+  width: 4vh;
+  height: 4vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid var(--color-primary);
+  border-radius: 100%;
+}
+
+.navbar_profileImage {
+  position: absolute;
+  right: 1vw;
+}
+
+.main_left_profile_profileImage {
+  margin: 2vh 0;
+  margin-left: 1vh;
+}
+
+.main_middle_highline_profileimage {
+  position: absolute;
+  top: 2vh;
+  margin: auto;
+}
+
+.main_middle_post_profileimage {
+  margin: 1vh;
+}
+
+.main_middle_card_profileImage {
+  margin: 2vh 0;
+  margin-left: 1vh;
+}
+
+.main_right_message_profileImage {
+  margin: 2vh 0;
+  margin-left: 1vh;
+}
+
+.main_right_requests_profileImage {
+  margin: 2vh 0;
+  margin-left: 1vh;
+}
+
+.main_middle_card_cardLikeProfileImage {
+  width: 3vh;
+  height: 3vh;
+  margin: 0 0.5vh;
+}

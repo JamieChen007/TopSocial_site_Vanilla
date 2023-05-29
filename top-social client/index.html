@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Social</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_logo"></div>
+      <div class="navbar_search">
+        <div class="navbar_search_icon"><i class="uil uil-search-alt"></i></div>
+        <input
+          type="search"
+          placeholder="Search for Creators"
+          class="navbar_search_input"
+        />
+      </div>
+      <button class="navbar_create"></button>
+      <div class="navbar_profileImage"></div>
+    </nav>
+    <main>
+      <div class="main_left">
+        <div class="main_left_profile">
+          <div class="main_left_profile_profileImage"></div>
+          <div class="main_left_profile_nameandat">
+            <span class="main_left_profile_nameandat_name"></span>
+            <span class="main_left_profile_nameandat_at"></span>
+          </div>
+        </div>
+        <div class="main_left_menucontainer"></div>
+        <button class="main_left_create" id="main_left_create"></button>
+      </div>
+      <div class="main_middle">
+        <div class="main_middle_highlinecontainer"></div>
+        <div class="main_middle_post">
+          <div class="main_middle_post_profileimage"></div>
+          <input type="text" class="main_middle_post_input" />
+          <button class="main_middle_post_postbtn"></button>
+        </div>
+        <div class="main_middle_cardcontainer"></div>
+      </div>
+      <div class="main_right">
+        <div class="main_right_message">
+          <div class="main_right_message_title">
+            <span class="main_right_message_title_name"></span>
+            <div class="main_right_message_title_icon">
+              <i class="uil uil-edit"></i>
+            </div>
+          </div>
+          <div class="main_right_message_search">
+            <div class="main_right_message_search_icon">
+              <i class="uil uil-search-alt"></i>
+            </div>
+            <input
+              type="search"
+              placeholder="Search for Creators"
+              class="main_right_message_search_input"
+            />
+          </div>
+          <div class="main_right_message_tab">
+            <div class="main_right_message_tab_menu active"></div>
+            <div class="main_right_message_tab_menu"></div>
+            <div class="main_right_message_tab_menu"></div>
+          </div>
+          <div class="main_right_message_container"></div>
+        </div>
+        <span class="main_right_requests_title"></span>
+        <div class="main_right_requests"></div>
+      </div>
+    </main>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

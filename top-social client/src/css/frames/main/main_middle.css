@@ -1,0 +1,166 @@
+.main_middle_highlinecontainer {
+  width: 100%;
+  height: 25vh;
+  margin: 1vh 0;
+  display: flex;
+}
+
+.main_middle_highline {
+  width: calc(100% / 6);
+  height: 25vh;
+  border-radius: 10px;
+  margin: 0 0.2vw;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main_middle_highline_description {
+  color: var(--color-white);
+  line-height: 45vh;
+}
+
+.main_middle_post {
+  width: 100%;
+  height: 6vh;
+  margin: 1vh 0;
+  background-color: var(--color-bgwhite);
+  border-radius: 10px;
+  display: flex;
+}
+
+.main_middle_post_input {
+  width: 25vw;
+  background-color: var(--color-bgwhite);
+  border: 0;
+  outline: 0;
+  font-size: 2vh;
+  line-height: 3vh;
+  height: 2vh;
+  margin: 2vh 0;
+}
+
+.main_middle_cardcontainer {
+  width: 100%;
+  margin: 1vh 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_middle_cardcontainer_box {
+  width: 100%;
+  margin: 0.5vh 0;
+  background-color: var(--color-bgwhite);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_middle_card_profileCtn {
+  display: flex;
+  height: 8vh;
+  position: relative;
+}
+
+.main_middle_card_profileNamePositionTime {
+  display: flex;
+  flex-direction: column;
+  height: 4vh;
+  margin: 2vh 1vh;
+  text-align: left;
+}
+
+.main_middle_card_profileName {
+  height: 2vh;
+  font-size: 2vh;
+  font-weight: 900;
+  color: var(--color-black);
+}
+
+.main_middle_card_profilePositionTime {
+  height: 2vh;
+  font-size: 1.5vh;
+  line-height: 2vh;
+  font-weight: 200;
+  color: var(--color-gray);
+}
+
+.main_middle_card_profileCtn i {
+  height: 4vh;
+  position: absolute;
+  font-size: 2vh;
+  right: 3vh;
+  line-height: 4vh;
+  margin: 2vh 0;
+  cursor: pointer;
+}
+
+.main_middle_card_cardPic {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main_middle_card_cardFunction {
+  display: flex;
+  height: 4.5vh;
+  width: 95%;
+  margin: 1vh auto;
+  position: relative;
+}
+
+.main_middle_card_cardFunctionLike,
+.main_middle_card_cardFunctionComment,
+.main_middle_card_cardFunctionShare {
+  font-size: 4vh;
+  line-height: 4.5vh;
+  color: var(--color-primary);
+  cursor: pointer;
+  margin: 0 1vh;
+}
+
+.main_middle_card_cardFunctionMark {
+  font-size: 4vh;
+  line-height: 4.5vh;
+  color: bisque;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.main_middle_card_cardLike {
+  display: flex;
+  height: 3vh;
+  width: 95%;
+  margin: 0.2vh auto;
+}
+
+.main_middle_card_cardLikeInfo {
+  height: 3vh;
+  line-height: 3vh;
+  margin-left: 1vh;
+}
+
+.main_middle_card_cardLikeCommentInfo {
+  height: 3vh;
+  line-height: 3vh;
+  width: 95%;
+  margin: 0.2vh auto;
+  text-align: left;
+  font-weight: 500;
+}
+
+.main_middle_card_cardLikeViewInfo {
+  height: 3vh;
+  line-height: 3vh;
+  width: 95%;
+  margin: 0.2vh auto;
+  text-align: left;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--color-gray);
+}
