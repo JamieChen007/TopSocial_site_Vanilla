@@ -2,6 +2,8 @@ import "./index.css";
 
 import { profile, highline, cards, message, request } from "./src/data/db.json";
 
+import { menuName, menuIconClass, tabMenuName } from "./src/js/config";
+
 import {
   navbar_logo,
   navbar_profileImage,
@@ -34,6 +36,8 @@ renderMainRightMessage();
 renderMainRightMessageList(message);
 renderMainRightRquestsList(main_right_requests, request);
 
+let activeMenu;
+
 // create Element function, return new Element
 function createEle(elType, elClassName, elInnerHtml, elBgImage) {
   let newEl = document.createElement(elType);
@@ -65,28 +69,6 @@ function renderMainLeft() {
 
 // set main left menu name and icon
 function renderMainLeftMenu() {
-  let menuName = [
-    "home",
-    "explore",
-    "notifications",
-    "messages",
-    "bookmarks",
-    "analytics",
-    "theme",
-    "setting",
-  ];
-
-  let menuIconClass = [
-    "uil uil-home",
-    "uil uil-eye",
-    "uil uil-bell",
-    "uil uil-comment-alt-dots",
-    "uil uil-bookmark",
-    "uil uil-analytics",
-    "uil uil-swatchbook",
-    "uil uil-setting",
-  ];
-
   for (let i = 0; i < menuName.length; i++) {
     const menu = createEle("div", "main_left_menu", "", "");
 
@@ -173,12 +155,9 @@ function renderMainMiddlePost() {
     "px";
 }
 
-let activeMenu;
-
 // set main right message
 function renderMainRightMessage() {
   main_right_message_title_name.innerHTML = "message";
-  let tabMenuName = ["primary", "general", "requests"];
 
   let tabNum = 3;
   for (let i = 0; i < tabNum; i++) {
@@ -211,40 +190,55 @@ function renderMainRightMessage() {
 
 // set main right message list
 function renderMainRightMessageList(message) {
-  main_right_message_container.innerHTML = "";
-  for (let i = 0; i < message.length; i++) {
-    const profileIamge = createEle(
-      "div",
-      "main_right_message_profileImage",
-      "",
-      message[i].src
-    );
+  if (message.length === 0) {
+    main_right_message_container.innerHTML = "<div>no data found</div>";
+    return;
+  } else {
+    main_right_message_container.innerHTML = "";
+    for (let i = 0; i < message.length; i++) {
+      const profileIamge = createEle(
+        "div",
+        "main_right_message_profileImage",
+        "",
+        message[i].src
+      );
 
-    const profilenameandmsg = createEle(
-      "div",
-      "main_right_message_nameandmsg",
-      "",
-      ""
-    );
+      const profilenameandmsg = createEle(
+        "div",
+        "main_right_message_nameandmsg",
+        "",
+        ""
+      );
 
-    const profileName = createEle(
-      "div",
-      "main_right_message_name",
-      message[i].name,
-      ""
-    );
+      const profileName = createEle(
+        "div",
+        "main_right_message_name",
+        message[i].name,
+        ""
+      );
 
-    const msg = createEle("div", "main_right_message_msg", message[i].msg, "");
+      const msg = createEle(
+        "div",
+        "main_right_message_msg",
+        message[i].msg,
+        ""
+      );
 
-    profilenameandmsg.appendChild(profileName);
-    profilenameandmsg.appendChild(msg);
+      profilenameandmsg.appendChild(profileName);
+      profilenameandmsg.appendChild(msg);
 
-    const ctnBox = createEle("div", "main_right_message_container_box", "", "");
+      const ctnBox = createEle(
+        "div",
+        "main_right_message_container_box",
+        "",
+        ""
+      );
 
-    ctnBox.appendChild(profileIamge);
-    ctnBox.appendChild(profilenameandmsg);
+      ctnBox.appendChild(profileIamge);
+      ctnBox.appendChild(profilenameandmsg);
 
-    main_right_message_container.appendChild(ctnBox);
+      main_right_message_container.appendChild(ctnBox);
+    }
   }
 }
 
@@ -252,87 +246,92 @@ function renderMainRightMessageList(message) {
 function renderMainRightRquestsList(el, request) {
   main_right_requests_title.textContent = "request";
 
-  el.innerHTML = "";
-  for (let i = 0; i < request.length; i++) {
-    const profileIamge = createEle(
-      "div",
-      "main_right_requests_profileImage",
-      "",
-      request[i].src
-    );
+  if (request.length === 0) {
+    el.innerHTML = "<div>no data found</div>";
+    return;
+  } else {
+    el.innerHTML = "";
+    for (let i = 0; i < request.length; i++) {
+      const profileIamge = createEle(
+        "div",
+        "main_right_requests_profileImage",
+        "",
+        request[i].src
+      );
 
-    const profilenameandmfriend = createEle(
-      "div",
-      "main_right_requests_profilenameandmfriend",
-      "",
-      ""
-    );
+      const profilenameandmfriend = createEle(
+        "div",
+        "main_right_requests_profilenameandmfriend",
+        "",
+        ""
+      );
 
-    const profileName = createEle(
-      "div",
-      "main_right_requests_name",
-      request[i].name,
-      ""
-    );
+      const profileName = createEle(
+        "div",
+        "main_right_requests_name",
+        request[i].name,
+        ""
+      );
 
-    const mfriend = createEle(
-      "div",
-      "main_right_requests_mfriend",
-      request[i].mutualFriendNum + " Mutual friends",
-      ""
-    );
+      const mfriend = createEle(
+        "div",
+        "main_right_requests_mfriend",
+        request[i].mutualFriendNum + " Mutual friends",
+        ""
+      );
 
-    profilenameandmfriend.appendChild(profileName);
-    profilenameandmfriend.appendChild(mfriend);
+      profilenameandmfriend.appendChild(profileName);
+      profilenameandmfriend.appendChild(mfriend);
 
-    const ctnBox = createEle(
-      "div",
-      "main_right_requests_container_box",
-      "",
-      ""
-    );
+      const ctnBox = createEle(
+        "div",
+        "main_right_requests_container_box",
+        "",
+        ""
+      );
 
-    ctnBox.appendChild(profileIamge);
-    ctnBox.appendChild(profilenameandmfriend);
+      ctnBox.appendChild(profileIamge);
+      ctnBox.appendChild(profilenameandmfriend);
 
-    const acceptBtn = createEle(
-      "button",
-      "main_right_requests_acceptBtn",
-      "accept",
-      ""
-    );
+      const acceptBtn = createEle(
+        "button",
+        "main_right_requests_acceptBtn",
+        "accept",
+        ""
+      );
 
-    const declineBtn = createEle(
-      "button",
-      "main_right_requests_declineBtn",
-      "decline",
-      ""
-    );
+      const declineBtn = createEle(
+        "button",
+        "main_right_requests_declineBtn",
+        "decline",
+        ""
+      );
 
-    const btnBox = createEle("div", "main_right_requests_button_box", "", "");
+      const btnBox = createEle("div", "main_right_requests_button_box", "", "");
 
-    btnBox.appendChild(acceptBtn);
-    btnBox.appendChild(declineBtn);
+      btnBox.appendChild(acceptBtn);
+      btnBox.appendChild(declineBtn);
 
-    const ctn = createEle("div", "main_right_requests_container", "", "");
+      const ctn = createEle("div", "main_right_requests_container", "", "");
 
-    ctn.appendChild(ctnBox);
-    ctn.appendChild(btnBox);
+      ctn.appendChild(ctnBox);
+      ctn.appendChild(btnBox);
 
-    el.appendChild(ctn);
+      el.appendChild(ctn);
 
-    //set requests height
-
-    if (el === main_right_requests) {
-      main_right_requests.style.height =
-        ctn.clientHeight * request.length + "px";
+      //set requests height
+      if (el === main_right_requests) {
+        main_right_requests.style.height =
+          ctn.clientHeight * request.length + "px";
+      }
     }
   }
 }
 
 // set Main Middle card
 function renderMainMiddleCards(cards) {
-  if (!cards) {
+  if (cards.length === 0) {
+    main_middle_cardcontainer.innerHTML = "<div>no data found</div>";
     return;
   } else {
     main_middle_cardcontainer.innerHTML = "";
