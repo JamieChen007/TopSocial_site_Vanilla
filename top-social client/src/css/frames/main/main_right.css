@@ -63,7 +63,7 @@
   line-height: 4vh;
   font-weight: 900;
   color: var(--color-gray);
-  margin: 0 2vh;
+  margin: 0 4vh;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -71,7 +71,22 @@
 .main_right_message_tab_menu.active {
   color: var(--color-black);
   border-bottom: 1vh solid var(--color-primary);
-  transition: all 0.3s linear;
+  /* transition: all 0.3s linear; */
+  animation: 0.5s ease move;
+}
+
+@keyframes move {
+  0%,
+  25% {
+    width: 50%;
+  }
+  50%,
+  75% {
+    width: 150%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .main_right_message_tab_menu:hover {
