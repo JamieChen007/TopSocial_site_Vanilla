@@ -36,7 +36,7 @@ renderMainRightMessage();
 renderMainRightMessageList(message);
 renderMainRightRquestsList(main_right_requests, request);
 
-let activeMenu;
+let activeMenu = "primary";
 
 // create Element function, return new Element
 function createEle(elType, elClassName, elInnerHtml, elBgImage) {
