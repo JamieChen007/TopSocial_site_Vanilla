@@ -71,7 +71,6 @@
 .main_right_message_tab_menu.active {
   color: var(--color-black);
   border-bottom: 1vh solid var(--color-primary);
-  /* transition: all 0.3s linear; */
   animation: 0.5s ease move;
 }
 

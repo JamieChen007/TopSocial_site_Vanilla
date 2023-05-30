@@ -5,6 +5,7 @@ import { profile, highline, cards, message, request } from "./src/data/db.json";
 import { menuName, menuIconClass, tabMenuName } from "./src/js/config";
 
 import {
+  navbar,
   navbar_logo,
   navbar_profileImage,
   navbar_create,
@@ -83,6 +84,9 @@ function renderMainLeftMenu() {
     menu.appendChild(menu_name);
 
     main_left_menucontainer.appendChild(menu);
+
+    main_left_menucontainer.style.height =
+      menu.clientHeight * menuName.length + "px";
   }
 }
 
@@ -238,6 +242,11 @@ function renderMainRightMessageList(message) {
       ctnBox.appendChild(profilenameandmsg);
 
       main_right_message_container.appendChild(ctnBox);
+
+      //set scroll when data length > 5
+      if (message.length > 5) {
+        main_right_message_container.style.overflowY = "scroll";
+      }
     }
   }
 }
@@ -323,6 +332,12 @@ function renderMainRightRquestsList(el, request) {
       if (el === main_right_requests) {
         main_right_requests.style.height =
           ctn.clientHeight * request.length + "px";
+      }
+
+      //set scroll when data length > 2
+      if (el === main_right_message_container && request.length > 2) {
+        main_right_message_container.style.overflowY = "scroll";
+        console.log("122211");
       }
     }
   }
@@ -564,5 +579,14 @@ main_right_message_search_input.addEventListener("input", function () {
     case "requests":
       renderMainRightRquestsList(main_right_message_container, request);
       break;
+  }
+});
+
+//navbar height change
+window.addEventListener("scroll", function () {
+  if (this.window.scrollY > navbar.offsetHeight + 150) {
+    navbar.classList.add("short");
+  } else {
+    navbar.classList.remove("short");
   }
 });

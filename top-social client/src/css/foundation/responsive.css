@@ -1,0 +1,107 @@
+@media only screen and (max-width: 1500px) {
+  .main_right_message_tab_menu {
+    font-size: 1.5vh;
+  }
+  .main_middle_card_cardPic {
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .main_left {
+    display: none;
+  }
+  .main_middle {
+    width: 60%;
+  }
+  .main_right {
+    width: 40%;
+  }
+  .navbar_create {
+    right: 5vw;
+  }
+  .main_middle_highline_description {
+    font-size: 1.8vh;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_middle {
+    width: 60%;
+    margin: auto;
+  }
+  .main_right {
+    display: none;
+  }
+  .main_middle_highline_description {
+    font-size: 1.5vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main_middle_card_cardPic {
+    height: 45vh;
+  }
+  .navbar_create {
+    font-size: 1.2vh;
+  }
+  .main_middle_highlinecontainer {
+    height: 20vh;
+  }
+  .main_middle_highline {
+    height: 20vh;
+  }
+  .main_middle_highline_description {
+    line-height: 35vh;
+  }
+  .navbar_search_input {
+    width: 70%;
+  }
+  .navbar_search_input::placeholder {
+    font-size: 1.2vh;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  *,
+  *::placeholder {
+    font-size: 1.5vh;
+  }
+  .main_middle_highline_description {
+    font-size: 1.4vh;
+  }
+  .main_middle_card_cardPic {
+    height: 40vh;
+  }
+  .navbar_create {
+    right: 6vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main_middle_card_cardPic {
+    height: 35vh;
+  }
+  .navbar_create {
+    font-size: 1vh;
+  }
+  .main_middle_highline_description {
+    font-size: 1.2vh;
+  }
+  *,
+  *::placeholder {
+    font-size: 1.3vh;
+  }
+  .navbar_search_input::placeholder {
+    font-size: 1vh;
+  }
+  .main_middle_highlinecontainer {
+    height: 15vh;
+  }
+  .main_middle_highline {
+    height: 15vh;
+  }
+  .main_middle_highline_description {
+    line-height: 25vh;
+  }
+}

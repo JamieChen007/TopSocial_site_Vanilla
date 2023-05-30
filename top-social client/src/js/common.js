@@ -1,3 +1,5 @@
+export const navbar = document.querySelector(".navbar");
+
 export const navbar_logo = document.querySelector(".navbar_logo");
 
 export const navbar_profileImage = document.querySelector(

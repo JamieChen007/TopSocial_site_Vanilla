@@ -19,3 +19,5 @@
 @import "./src/css/frames/main/main_middle.css";
 
 @import "./src/css/frames/main/main_right.css";
+
+@import "./src/css/foundation/responsive.css";
