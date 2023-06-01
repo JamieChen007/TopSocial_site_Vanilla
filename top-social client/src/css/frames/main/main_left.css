@@ -1,32 +1,34 @@
 .main_left_profile {
   width: 100%;
-  height: 8vh;
   margin: 1vh 0;
-  display: flex;
   background-color: var(--color-bgwhite);
   border-radius: 10px;
+  height: 8vh;
+  display: grid;
+  justify-content: start;
+  grid-template-rows: repeat(4, 2vh);
 }
 
-.main_left_profile_nameandat {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  margin: 2vh 1vh;
+.main_left_profile_name {
   text-align: left;
-}
-.main_left_profile_nameandat_name {
   height: 2vh;
+  line-height: 2vh;
   font-size: 2vh;
   font-weight: 900;
-  color: var(--black);
+  color: var(--color-black);
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.main_left_profile_nameandat_at {
+.main_left_profile_at {
+  text-align: left;
   height: 2vh;
-  font-size: 1vh;
+  font-size: 1.3vh;
   line-height: 2vh;
   font-weight: 200;
-  color: var(--black);
+  color: var(--color-black);
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .main_left_menucontainer {

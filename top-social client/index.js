@@ -13,8 +13,8 @@ import {
   main_left_menucontainer,
   main_left_create,
   main_left_profile_profileImage,
-  main_left_profile_nameandat_name,
-  main_left_profile_nameandat_at,
+  main_left_profile_name,
+  main_left_profile_at,
   main_middle_highlinecontainer,
   main_middle_post,
   main_middle_post_profileimage,
@@ -62,8 +62,8 @@ function renderNavbar() {
 function renderMainLeft() {
   main_left_profile_profileImage.style.backgroundImage =
     "url(./src/images/profile/profile_1.png)";
-  main_left_profile_nameandat_name.innerHTML = profile.name;
-  main_left_profile_nameandat_at.innerHTML = profile.at;
+  main_left_profile_name.innerHTML = profile.name;
+  main_left_profile_at.innerHTML = profile.at;
   renderMainLeftMenu();
   main_left_create.innerHTML = "create post";
 }
@@ -207,13 +207,6 @@ function renderMainRightMessageList(message) {
         message[i].src
       );
 
-      const profilenameandmsg = createEle(
-        "div",
-        "main_right_message_nameandmsg",
-        "",
-        ""
-      );
-
       const profileName = createEle(
         "div",
         "main_right_message_name",
@@ -228,9 +221,6 @@ function renderMainRightMessageList(message) {
         ""
       );
 
-      profilenameandmsg.appendChild(profileName);
-      profilenameandmsg.appendChild(msg);
-
       const ctnBox = createEle(
         "div",
         "main_right_message_container_box",
@@ -239,7 +229,8 @@ function renderMainRightMessageList(message) {
       );
 
       ctnBox.appendChild(profileIamge);
-      ctnBox.appendChild(profilenameandmsg);
+      ctnBox.appendChild(profileName);
+      ctnBox.appendChild(msg);
 
       main_right_message_container.appendChild(ctnBox);
 
@@ -268,13 +259,6 @@ function renderMainRightRquestsList(el, request) {
         request[i].src
       );
 
-      const profilenameandmfriend = createEle(
-        "div",
-        "main_right_requests_profilenameandmfriend",
-        "",
-        ""
-      );
-
       const profileName = createEle(
         "div",
         "main_right_requests_name",
@@ -289,9 +273,6 @@ function renderMainRightRquestsList(el, request) {
         ""
       );
 
-      profilenameandmfriend.appendChild(profileName);
-      profilenameandmfriend.appendChild(mfriend);
-
       const ctnBox = createEle(
         "div",
         "main_right_requests_container_box",
@@ -300,7 +281,8 @@ function renderMainRightRquestsList(el, request) {
       );
 
       ctnBox.appendChild(profileIamge);
-      ctnBox.appendChild(profilenameandmfriend);
+      ctnBox.appendChild(profileName);
+      ctnBox.appendChild(mfriend);
 
       const acceptBtn = createEle(
         "button",
@@ -359,13 +341,6 @@ function renderMainMiddleCards(cards) {
         cards[i].profile.src
       );
 
-      const profileNamePositionTime = createEle(
-        "div",
-        "main_middle_card_profileNamePositionTime",
-        "",
-        ""
-      );
-
       const profileName = createEle(
         "div",
         "main_middle_card_profileName",
@@ -380,9 +355,6 @@ function renderMainMiddleCards(cards) {
         ""
       );
 
-      profileNamePositionTime.appendChild(profileName);
-      profileNamePositionTime.appendChild(profilePositionTime);
-
       const profileMore = createEle("i", "uil uil-ellipsis-h", "", "");
 
       const profileCtn = createEle(
@@ -393,7 +365,8 @@ function renderMainMiddleCards(cards) {
       );
 
       profileCtn.appendChild(profileIamge);
-      profileCtn.appendChild(profileNamePositionTime);
+      profileCtn.appendChild(profileName);
+      profileCtn.appendChild(profilePositionTime);
       profileCtn.appendChild(profileMore);
 
       //card picture

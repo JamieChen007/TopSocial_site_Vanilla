@@ -100,22 +100,21 @@
 }
 
 .main_right_message_container_box {
-  display: flex;
   height: 8vh;
+  display: grid;
+  justify-content: start;
+  grid-template-rows: repeat(4, 2vh);
 }
 
-.main_right_message_nameandmsg {
-  display: flex;
-  flex-direction: column;
-  height: 8vh;
-  margin: 2vh 1vh;
-  text-align: left;
-}
 .main_right_message_name {
+  color: var(--color-black);
+  text-align: left;
   height: 2vh;
+  line-height: 2vh;
   font-size: 2vh;
   font-weight: 900;
-  color: var(--color-black);
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .main_right_message_msg {
@@ -124,6 +123,9 @@
   line-height: 2vh;
   font-weight: 200;
   color: var(--color-gray);
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: left;
 }
 
 .main_right_requests {
@@ -143,24 +145,22 @@
 }
 
 .main_right_requests_container_box {
-  display: flex;
-  height: 8vh;
   margin: 1vh 2vh;
-}
-
-.main_right_requests_profilenameandmfriend {
-  display: flex;
-  flex-direction: column;
   height: 8vh;
-  margin: 2vh 1vh;
-  text-align: left;
+  display: grid;
+  justify-content: start;
+  grid-template-rows: repeat(4, 2vh);
 }
 
 .main_right_requests_name {
   height: 2vh;
   font-size: 2vh;
+  line-height: 2vh;
   font-weight: 900;
   color: var(--color-black);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: left;
 }
 
 .main_right_requests_mfriend {
@@ -169,6 +169,9 @@
   line-height: 2vh;
   font-weight: 200;
   color: var(--color-gray);
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: left;
 }
 
 .main_right_requests_button_box {

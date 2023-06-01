@@ -58,24 +58,23 @@
 }
 
 .main_middle_card_profileCtn {
-  display: flex;
-  height: 8vh;
   position: relative;
-}
-
-.main_middle_card_profileNamePositionTime {
-  display: flex;
-  flex-direction: column;
-  height: 4vh;
-  margin: 2vh 1vh;
-  text-align: left;
+  margin: 0 2vh;
+  height: 8vh;
+  display: grid;
+  justify-content: start;
+  grid-template-rows: repeat(4, 2vh);
 }
 
 .main_middle_card_profileName {
   height: 2vh;
   font-size: 2vh;
+  line-height: 2vh;
   font-weight: 900;
   color: var(--color-black);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: left;
 }
 
 .main_middle_card_profilePositionTime {
@@ -84,6 +83,9 @@
   line-height: 2vh;
   font-weight: 200;
   color: var(--color-gray);
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: left;
 }
 
 .main_middle_card_profileCtn i {

@@ -18,12 +18,12 @@ export const main_left_profile_profileImage = document.querySelector(
   ".main_left_profile_profileImage"
 );
 
-export const main_left_profile_nameandat_name = document.querySelector(
-  ".main_left_profile_nameandat_name"
+export const main_left_profile_name = document.querySelector(
+  ".main_left_profile_name"
 );
 
-export const main_left_profile_nameandat_at = document.querySelector(
-  ".main_left_profile_nameandat_at"
+export const main_left_profile_at = document.querySelector(
+  ".main_left_profile_at"
 );
 
 export const main_left_menucontainer = document.querySelector(

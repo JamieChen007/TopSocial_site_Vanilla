@@ -14,14 +14,18 @@
   border-radius: 100%;
 }
 
+.main_left_profile_profileImage,
+.main_right_message_profileImage,
+.main_right_requests_profileImage,
+.main_middle_card_profileImage {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  margin: 2vh 1vh;
+}
+
 .navbar_profileImage {
   position: absolute;
   right: 1vw;
-}
-
-.main_left_profile_profileImage {
-  margin: 2vh 0;
-  margin-left: 1vh;
 }
 
 .main_middle_highline_profileimage {
@@ -32,21 +36,6 @@
 
 .main_middle_post_profileimage {
   margin: 1vh;
-}
-
-.main_middle_card_profileImage {
-  margin: 2vh 0;
-  margin-left: 1vh;
-}
-
-.main_right_message_profileImage {
-  margin: 2vh 0;
-  margin-left: 1vh;
-}
-
-.main_right_requests_profileImage {
-  margin: 2vh 0;
-  margin-left: 1vh;
 }
 
 .main_middle_card_cardLikeProfileImage {
