@@ -116,7 +116,76 @@
         "time": "15 MINUTES AGO"
       },
       "picture": {
-        "img_src": "./src/images/post/post_8.jpeg"
+        "img_src": "./src/images/post/post_9.jpeg"
+      },
+      "comment": {
+        "img_src_list": [
+          "./src/images/profile/profile_5.png",
+          "./src/images/profile/profile_6.png",
+          "./src/images/profile/profile_7.png"
+        ],
+        "first_people_name": "Ernest Achiever",
+        "like_peoples_number": 2323,
+        "comment_info": "Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle",
+        "view_number": 3473
+      }
+    },
+    {
+      "id": 6,
+      "profile": {
+        "src": "./src/images/profile/profile_5.png",
+        "name": "Jamie Chen",
+        "position": "Somewhere",
+        "time": "15 MINUTES AGO"
+      },
+      "picture": {
+        "img_src": "./src/images/post/post_10.jpeg"
+      },
+      "comment": {
+        "img_src_list": [
+          "./src/images/profile/profile_5.png",
+          "./src/images/profile/profile_6.png",
+          "./src/images/profile/profile_7.png"
+        ],
+        "first_people_name": "Ernest Achiever",
+        "like_peoples_number": 2323,
+        "comment_info": "Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle",
+        "view_number": 3473
+      }
+    },
+    {
+      "id": 7,
+      "profile": {
+        "src": "./src/images/profile/profile_2.png",
+        "name": "Tommy Li",
+        "position": "Somewhere",
+        "time": "15 MINUTES AGO"
+      },
+      "picture": {
+        "img_src": "./src/images/post/post_2.jpeg"
+      },
+      "comment": {
+        "img_src_list": [
+          "./src/images/profile/profile_5.png",
+          "./src/images/profile/profile_6.png",
+          "./src/images/profile/profile_7.png"
+        ],
+        "first_people_name": "Ernest Achiever",
+        "like_peoples_number": 2323,
+        "comment_info": "Lana Rose Lorem ipsum dolor sit quisquam eius. #lifestyle",
+        "view_number": 3473
+      }
+    },
+    {
+      "id": 8,
+      "profile": {
+        "src": "./src/images/profile/profile_3.png",
+        "name": "Bruce Wang",
+        "position": "Somewhere",
+        "time": "30 MINUTES AGO"
+      },
+      "picture": {
+        "img_src": "./src/images/post/post_3.jpeg"
       },
       "comment": {
         "img_src_list": [

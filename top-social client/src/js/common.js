@@ -75,3 +75,12 @@ export const main_right_requests_title = document.querySelector(
 export const main_right_requests = document.querySelector(
   ".main_right_requests"
 );
+
+// create Element function, return new Element
+export default function createEle(elType, elClassName, elInnerHtml, elBgImage) {
+  let newEl = document.createElement(elType);
+  newEl.className = elClassName;
+  newEl.innerHTML = elInnerHtml;
+  newEl.style.backgroundImage = "url(" + elBgImage + ")";
+  return newEl;
+}
