@@ -1,4 +1,4 @@
-import { profile, highline, cards } from "../../data/db";
+import { cards, profile, highline } from "../requestData";
 
 import createEle from "../common";
 
@@ -29,7 +29,7 @@ function renderMainMiddleHighline() {
       "div",
       "main_middle_highline",
       "",
-      "./src/images/highline/highline_" + [i + 1] + ".jpeg"
+      highline.highline_src[i]
     );
 
     //set highline description
@@ -45,7 +45,7 @@ function renderMainMiddleHighline() {
       "div",
       "main_middle_highline_profileimage",
       "",
-      "./src/images/profile/profile_" + [i + 1] + ".png"
+      highline.profile_src[i]
     );
 
     highlineEl.appendChild(highlineDesEl);
@@ -63,7 +63,7 @@ function renderMainMiddleHighline() {
 //set main middle post
 function renderMainMiddlePost() {
   main_middle_post_profileimage.style.backgroundImage =
-    "url(./src/images/profile/profile_1.png)";
+    "url(" + profile.img_src + ")";
 
   main_middle_post_postbtn.innerHTML = "post";
 

@@ -1,4 +1,4 @@
-import { profile } from "../../data/db";
+import { profile } from "../requestData";
 
 import { menuName, menuIconClass } from "../config";
 
@@ -14,7 +14,7 @@ import {
 
 function renderMainLeft() {
   main_left_profile_profileImage.style.backgroundImage =
-    "url(./src/images/profile/profile_1.png)";
+    "url(" + profile.img_src + ")";
   main_left_profile_name.innerHTML = profile.name;
   main_left_profile_at.innerHTML = profile.at;
   renderMainLeftMenu();

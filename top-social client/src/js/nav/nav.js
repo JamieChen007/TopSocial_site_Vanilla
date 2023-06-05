@@ -6,7 +6,7 @@ import {
   navbar_search_input,
 } from "../common";
 
-import { cards } from "../../data/db";
+import { profile, cards } from "../requestData";
 
 import { renderMainMiddleCards } from "../main/main_middle";
 
@@ -16,8 +16,7 @@ function renderNavbar() {
 
   navbar_create.innerHTML = "create";
 
-  navbar_profileImage.style.backgroundImage =
-    "url(./src/images/profile/profile_1.png)";
+  navbar_profileImage.style.backgroundImage = "url(" + profile.img_src + ")";
 
   navbar_search_input.focus();
 }

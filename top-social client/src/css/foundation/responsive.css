@@ -27,32 +27,41 @@
 
 @media only screen and (max-width: 1200px) {
   .main_middle {
-    width: 60%;
+    width: 95%;
     margin: auto;
   }
   .main_right {
     display: none;
   }
+  .main_middle_highlinecontainer {
+    height: 30vh;
+  }
+  .main_middle_highline {
+    height: 30vh;
+  }
   .main_middle_highline_description {
-    font-size: 1.5vh;
+    line-height: 55vh;
+  }
+  .main_middle_card_cardPic {
+    height: 85vh;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .main_middle_card_cardPic {
-    height: 45vh;
+    height: 75vh;
   }
   .navbar_create {
     font-size: 1.2vh;
   }
   .main_middle_highlinecontainer {
-    height: 20vh;
+    height: 25vh;
   }
   .main_middle_highline {
-    height: 20vh;
+    height: 25vh;
   }
   .main_middle_highline_description {
-    line-height: 35vh;
+    line-height: 45vh;
   }
   .navbar_search_input {
     width: 70%;
@@ -63,15 +72,8 @@
 }
 
 @media only screen and (max-width: 915px) {
-  *,
-  *::placeholder {
-    font-size: 1.5vh;
-  }
-  .main_middle_highline_description {
-    font-size: 1.4vh;
-  }
   .main_middle_card_cardPic {
-    height: 40vh;
+    height: 65vh;
   }
   .navbar_create {
     right: 6vw;
@@ -80,28 +82,21 @@
 
 @media only screen and (max-width: 800px) {
   .main_middle_card_cardPic {
-    height: 35vh;
+    height: 58vh;
   }
   .navbar_create {
     font-size: 1vh;
-  }
-  .main_middle_highline_description {
-    font-size: 1.2vh;
-  }
-  *,
-  *::placeholder {
-    font-size: 1.3vh;
   }
   .navbar_search_input::placeholder {
     font-size: 1vh;
   }
   .main_middle_highlinecontainer {
-    height: 15vh;
+    height: 20vh;
   }
   .main_middle_highline {
-    height: 15vh;
+    height: 20vh;
   }
   .main_middle_highline_description {
-    line-height: 25vh;
+    line-height: 35vh;
   }
 }

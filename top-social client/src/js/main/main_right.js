@@ -1,4 +1,4 @@
-import { message, request } from "../../data/db";
+import { message, request } from "../requestData";
 
 import { tabMenuName } from "../config";
 
