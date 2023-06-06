@@ -100,3 +100,107 @@
     line-height: 35vh;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .main_middle_card_cardPic {
+    height: 50vh;
+  }
+
+  .navbar_create {
+    right: 8vw;
+    font-size: 0.9vh;
+  }
+
+  .navbar_search_input::placeholder {
+    font-size: 0.8vh;
+  }
+
+  .main_middle_post_postbtn {
+    font-size: 0.9vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main_middle_card_cardPic {
+    height: 45vh;
+  }
+
+  .navbar_create {
+    right: 8vw;
+    font-size: 0.7vh;
+  }
+
+  .main_middle_post_postbtn {
+    font-size: 0.7vh;
+  }
+
+  .main_middle_highline_description {
+    font-size: 1vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main_middle_card_cardPic {
+    height: 35vh;
+  }
+
+  * {
+    font-size: 1.3vh;
+  }
+
+  .navbar_create {
+    right: 10vw;
+    font-size: 1vh;
+    width: 10vw;
+  }
+  .navbar_search {
+    width: 25vw;
+  }
+
+  .main_middle_post_postbtn {
+    font-size: 1vh;
+    width: 10vw;
+  }
+
+  .main_middle_highline_description {
+    font-size: 1vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main_middle_card_cardPic {
+    height: 28vh;
+  }
+
+  * {
+    font-size: 1.1vh;
+  }
+
+  .navbar_create {
+    right: 12vw;
+    font-size: 1vh;
+    width: 12vw;
+  }
+  .navbar_search {
+    width: 34vw;
+  }
+
+  .main_middle_post_postbtn {
+    font-size: 1vh;
+    width: 10vw;
+  }
+  .main_middle_post_input::placeholder {
+    font-size: 1.3vh;
+  }
+
+  .main_middle_highlinecontainer {
+    height: 12vh;
+  }
+  .main_middle_highline {
+    height: 12vh;
+  }
+  .main_middle_highline_description {
+    line-height: 20vh;
+    font-size: 1vh;
+  }
+}
